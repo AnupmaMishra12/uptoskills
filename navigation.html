@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+      }
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      .navbar .profile {
+        display: flex;
+        align-items: center;
+      }
+      .navbar .profile img {
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img class="profile">
+        <img src="profile.jpg" alt="Profile Picture" width="40" height="40" />
+        <a href="#edit">Edit</a>
+      </img>
+      <a href="#logout">Logout</a>
+    </div>
+  </body>
+</html>

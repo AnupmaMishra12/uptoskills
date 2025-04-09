@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rich Text Editor</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .editor-container {
+        margin: 20px;
+      }
+      .label-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+      }
+      .label-container span {
+        color: red;
+      }
+      .side {
+        color: blue;
+      }
+      .editor-toolbar {
+        border: 1px solid #ccc;
+        border-bottom: none;
+        padding: 10px;
+        display: flex;
+        gap: 8px;
+        font-size: 16px;
+      }
+      .editor-toolbar button {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+      }
+      .editor-toolbar button:hover {
+        color: blue;
+      }
+      .editor-textarea {
+        width: 100%;
+        height: 150px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-size: 14px;
+        resize: vertical;
+      }
+      .text-box {
+        border: 1px solid #ccc;
+        padding: 8px;
+        height: 350px;
+      }
+      .next-button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 40px 10px 40px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        float: right;
+      }
+      .next-button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="editor-container">
+      <div class="label-container">
+        <label for="about-opportunity">About Opportunity <span>*</span></label>
+        <div class="side">(Minimum Word Limit: 500)</div>
+      </div>
+      <div class="editor-toolbar">
+        <button><b>B</b></button>
+        <button><i>I</i></button>
+        <button><u>U</u></button>
+        <button>$</button>
+        <button>≡</button>
+        <button>≡</button>
+        <button>≡</button>
+        <button>≡</button>
+        <button>•</button>
+        <button>•</button>
+        <button>✂</button>
+        <button>📋</button>
+        <button>x²</button>
+        <button>x₂</button>
+        <button>🖼</button>
+      </div>
+      <div class="text-box">
+        <p>
+          Provide a detailed description of the opportunity, including
+          eligibility criteria, the application process, and any unique
+          requirements. Ensure all essential points are clearly outlined.
+        </p>
+
+        <h3>Guidelines:</h3>
+        <ul>
+          <li>
+            State eligibility criteria, such as qualifications or experience.
+          </li>
+          <li>
+            Specify if inter-college or inter-specialization teams are allowed.
+          </li>
+          <li>
+            Outline the format of the competition, including rounds or types of
+            assessments.
+          </li>
+          <li>Provide the estimated duration for each round or event.</li>
+        </ul>
+
+        <h3>Rules:</h3>
+        <ul>
+          <li>List essential rules that participants must follow.</li>
+          <li>Include any restrictions or limitations.</li>
+          <li>Mention how rule violations will be handled.</li>
+        </ul>
+      </div>
+
+      <div class="button-container">
+        <button class="next-button">Next</button>
+      </div>
+    </div>
+  </body>
+</html>
